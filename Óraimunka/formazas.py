@@ -5,7 +5,7 @@ def hello(name,  color, what):
     #C-ben:
     # print f("%s, %s az %s!\n", name, color, what);
     # v1
-    print(" 1) {0}, {1} a {2}!".format(name.capitalize(),color,what))
+    print(" 1) {0}, a {1} a {2} franchise történetének legjobb játékosa!".format(name.capitalize(),color,what))
     # v2
     #print(" 2) {}, {} az {}!".format(name, color, what))
     # v3
