@@ -25,13 +25,13 @@
 # Adjuk vissza az eredménysztringet.
 def verbing(s):
     # TODO...
+    if len(s) < 3:
+        return s
 
-    if s[-3:] == 'ing' and len(s) >= 3:
+    if s[-3:] == 'ing':
         return f"{s}ly"
     else:
         return f"{s}ing"
-
-
 
 
 # F. not_bad
@@ -44,7 +44,8 @@ def verbing(s):
 #        This dinner is good!
 def not_bad(s):
     # TODO...
-    return
+    if s.
+        return s
 
 
 # G. front_back
@@ -59,6 +60,8 @@ def not_bad(s):
 # Például ha a = 'abcd' és b = 'xy', akkor az eredmény 'abxcdy' legyen.
 def front_back(a, b):
     # TODO...
+    if len(a%0):
+        a.split()
     return
 
 
