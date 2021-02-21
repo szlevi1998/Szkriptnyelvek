@@ -31,7 +31,10 @@
 # donuts(23) visszatérési értéke 'Fánkok száma: sok'
 def donuts(count):
     # TODO...
-    return
+    if count >= 10:
+        return "Fánkok száma: sok"
+    else:
+        return "Fánkok száma: " + str(count)
 
 
 # B. both_ends
@@ -42,7 +45,11 @@ def donuts(count):
 # sztringet adjunk vissza.
 def both_ends(s):
     # TODO...
-    return
+
+    if len(s) <= 2:
+        return ('')
+    else:
+        return (f"{s[0:2]}{s[-2:]}")
 
 
 # C. fix_start
@@ -55,6 +62,7 @@ def both_ends(s):
 # melyben az stra összes előfordulása ki van cserélve strb-re.
 def fix_start(s):
     # TODO...
+
     return
 
 
@@ -68,6 +76,7 @@ def fix_start(s):
 # Feltételezhetjük, hogy a bemeneti sztringek hossza legalább 2.
 def mix_up(a, b):
     # TODO...
+
     return
 
 
@@ -113,6 +122,7 @@ def main():
     test(mix_up('dog', 'dinner'), 'dig donner')
     test(mix_up('gnash', 'sport'), 'spash gnort')
     test(mix_up('pezzy', 'firm'), 'fizzy perm')
+
 
 #############################################################################
 

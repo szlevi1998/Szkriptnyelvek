@@ -25,7 +25,13 @@
 # Adjuk vissza az eredménysztringet.
 def verbing(s):
     # TODO...
-    return
+
+    if s[-3:] == 'ing' and len(s) >= 3:
+        return f"{s}ly"
+    else:
+        return f"{s}ing"
+
+
 
 
 # F. not_bad
@@ -87,6 +93,7 @@ def main():
     test(front_back('abcd', 'xy'), 'abxcdy')
     test(front_back('abcde', 'xyz'), 'abcxydez')
     test(front_back('Kitten', 'Donut'), 'KitDontenut')
+
 
 #############################################################################
 
