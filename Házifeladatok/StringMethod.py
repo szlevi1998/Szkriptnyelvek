@@ -7,13 +7,13 @@ def main():
     szam = str(input())
 
     if szam.endswith("1"):
-        print("You are ", szam, "st")
+        print(f"You are {szam}st")
     elif szam.endswith("2"):
-        print("You are ", szam, "nd")
+        print(f"You are {szam}nd")
     elif szam.endswith("3"):
-        print("You are ", szam, "rd")
+        print(f"You are {szam}rd")
     else:
-        print("You are ", szam, 'th')
+        print(f"You are {szam}th")
 
 
 if __name__ == '__main__':
