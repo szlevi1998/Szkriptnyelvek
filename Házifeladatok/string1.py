@@ -62,8 +62,9 @@ def both_ends(s):
 # melyben az stra összes előfordulása ki van cserélve strb-re.
 def fix_start(s):
     # TODO...
-
-    return
+    firstletter = s[0]
+    b = s.replace(firstletter,'*').replace('*',firstletter,1)
+    return b
 
 
 # D. MixUp
@@ -76,8 +77,12 @@ def fix_start(s):
 # Feltételezhetjük, hogy a bemeneti sztringek hossza legalább 2.
 def mix_up(a, b):
     # TODO...
+    afirstletters = a[0:2]
+    bfirstletter = b[0:2]
 
-    return
+    c = a.replace(afirstletters,bfirstletter,1) + ' ' + b.replace(bfirstletter,afirstletters,1)
+
+    return c
 
 
 # Egy egyszerű teszt fv. Kiírja az egyes fv.-ek visszaadott értékét, ill.

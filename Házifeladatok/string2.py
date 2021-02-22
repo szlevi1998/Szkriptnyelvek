@@ -44,8 +44,8 @@ def verbing(s):
 #        This dinner is good!
 def not_bad(s):
     # TODO...
-    if s.
-        return s
+    # if s.
+    return s
 
 
 # G. front_back
@@ -60,9 +60,10 @@ def not_bad(s):
 # Például ha a = 'abcd' és b = 'xy', akkor az eredmény 'abxcdy' legyen.
 def front_back(a, b):
     # TODO...
-    if len(a%0):
-        a.split()
-    return
+    if (len(a) % 0):
+        return a.split(0), b.split(0)
+    else:
+        return a.split(1), b.split(1)
 
 
 # Egy egyszerű teszt fv. Kiírja az egyes fv.-ek visszaadott értékét, ill.
