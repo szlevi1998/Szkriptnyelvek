@@ -44,7 +44,10 @@ def verbing(s):
 #        This dinner is good!
 def not_bad(s):
     # TODO...
-    # if s.
+    bad_position = s.find("bad")
+    not_position = s.find("not")
+    if bad_position > not_position:
+        return s[:not_position] + "good" + s[bad_position + 3:]
     return s
 
 
@@ -58,12 +61,28 @@ def not_bad(s):
 # a következőképpen épül fel:
 # a-eleje + b-eleje + a-vége + b-vége
 # Például ha a = 'abcd' és b = 'xy', akkor az eredmény 'abxcdy' legyen.
+
 def front_back(a, b):
     # TODO...
-    if (len(a) % 0):
-        return a.split(0), b.split(0)
+    half_a = len(a)
+    half_b = len(b)
+    if half_a % 2 == 0:
+        half_a = int(half_a/2)
     else:
-        return a.split(1), b.split(1)
+        half_a = int(half_a/2) + 1
+    if half_b % 2 == 0:
+        half_b = int(half_b / 2)
+    else:
+        half_b = int(half_b / 2) + 1
+
+    a_first = a[:half_a]
+    a_end = a[half_a:]
+    b_first = b[:half_b]
+    b_end = b[half_b:]
+    return a_first + b_first + a_end + b_end
+
+
+
 
 
 # Egy egyszerű teszt fv. Kiírja az egyes fv.-ek visszaadott értékét, ill.
