@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # a program lényege a következő: az inputnak megadott szám után megadja a megfelelő angol végződést
 # például: 1st 2nd 3rd 4th stb.
 
@@ -18,3 +19,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    input()

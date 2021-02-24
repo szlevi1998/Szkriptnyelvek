@@ -9,8 +9,9 @@ def main():
     if forditott[0] == "0":
         print("A szám utolsó számjegye 0 ezért ezt nem lehet megfordítani")
     else:
-        print(forditott)
+        print("A megfordított szám : ", forditott)
 
 
 if __name__ == '__main__':
     main()
+    input()
