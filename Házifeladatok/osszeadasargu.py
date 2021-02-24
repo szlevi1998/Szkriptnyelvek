@@ -5,7 +5,7 @@ import sys
 
 def main():
     c = len(sys.argv)
-    if c < 2:
+    if c < 3:
         print("Kevés a megadott argumentum száma!, a futtatás parancs menete ./osszeadasargu.py a b")
 
     else:
