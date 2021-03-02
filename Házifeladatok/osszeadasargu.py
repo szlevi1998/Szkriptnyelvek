@@ -4,11 +4,11 @@ import sys
 
 
 def main():
-    c = len(sys.argv)
-    if c < 3:
-        print("Kevés a megadott argumentum száma!, a futtatás parancs menete ./osszeadasargu.py a b")
+    if len(sys.argv) < 3: 
+        print("Kevés a megadott argumentum száma!, a fordítás menete ./osszeadasargu.py a b")
 
     else:
+    
         a = sys.argv[1]
         b = sys.argv[2]
         eredmeny = int(a) + int(b)
