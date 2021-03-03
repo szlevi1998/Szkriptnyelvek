@@ -10,7 +10,7 @@ def clean(address):
 
 
 def main():
-    clean("192.20.246.138: 6666")
+    clean("192.20.246.138:\n 6666")
 
 
 if __name__ == '__main__':
