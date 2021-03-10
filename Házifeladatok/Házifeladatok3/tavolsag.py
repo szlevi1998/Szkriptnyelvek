@@ -4,14 +4,18 @@ import math
 
 
 def distance(p1, p2):
-    # TODO...
-    return
+    magassag = p2[1] - p1[1]
+    szelesseg = p2[0] - p1[0]
+    tavolsag = magassag ** 2 + szelesseg ** 2
+    tavolsag = math.sqrt(tavolsag)
+    return tavolsag
 
 
 def main():
     p1 = (1, 2)
     p2 = (6, 5)
     print('A ket pont kozti tavolsag:', distance(p1, p2))
+
 
 #############################################################################
 
