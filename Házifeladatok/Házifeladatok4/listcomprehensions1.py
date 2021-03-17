@@ -55,13 +55,36 @@ def ex_9():
 
 def ex_10():
     numbers = list(range(0, 10))
-    result = [i for i in numbers if i % 2 == 0]
+    result = [i for i in numbers if i % 10 == 0]
     print(result)
 
 
 def ex_11():
     numbers = list(range(0, 20))
     result = [i ** 2 for i in numbers if i % 2 == 0]
+    print(result)
+
+
+def ex_12():
+    numbers = list(range(0, 20))
+    result = [i ** 2 for i in numbers if i*i % 10 == 4]
+    print(result)
+
+
+def ex_13():
+    result = "".join(chr(num) for num in range(65, 90+1))
+    print(result)
+
+
+def ex_14():
+    input_words = [' apple ', ' banana ', ' kiwi']
+    result = [str(w.strip()) for w in input_words]
+    print(result)
+
+
+def ex_15():
+    numbers = [1, 0, 1, 1, 0, 1, 0, 0]
+    result = ["".join(str(l) for l in numbers)]
     print(result)
 
 
@@ -77,6 +100,10 @@ def main():
     ex_9()
     ex_10()
     ex_11()
+    ex_12()
+    ex_13()
+    ex_14()
+    ex_15()
 
 
 if __name__ == "__main__":
