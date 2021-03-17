@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 
-import datetime
-
+""""
+Ahhoz, hogy az évszámot megtaláljam a chrral megkerestem a megfelelőt amely ez: ߥ .
+Ezután simán vettem ennek a chr-nak az összegét.
+"""
 
 def main():
-    datum = datetime.datetime.now()
-    print(datum.year)
+    print(sum(ord(c) for c in "ߥ"))
 
 
 if __name__ == "__main__":
